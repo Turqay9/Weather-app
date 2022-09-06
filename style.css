@@ -1,0 +1,85 @@
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg,   rgba(255,255,255,1) 15%, rgb(50, 133, 201) 20%);
+    color: white;
+  }
+  
+  #title {
+    font-size: 2rem;
+    font-family: "Roboto";
+    text-transform: uppercase;
+  }
+  
+  #temp {
+    font-size: 5rem;
+    font-family: "Roboto";
+    margin: 1rem;
+  }
+  
+  #description {
+    font-size: 30px;
+    font-family: "Roboto";
+    margin: -1rem;
+    text-transform: uppercase;
+  }
+  
+  .minmax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    color: black;
+    font-weight: 900; 
+    font-size: 1rem;
+  }
+  
+  #min-temp,
+  #max-temp,
+  #pressure,
+  #humidity,
+  #wind{
+    margin: 0 2rem;
+    border-left: 3px solid rgba(0,119,255,1);
+    border-right: 3px solid rgba(0,119,255,1);
+    padding: 1rem;
+  }
+  
+/* #icon {
+    width: 25%;
+    height: 75%;
+    margin-top:0;
+    /* margin-left: 5rem; */
+  /* } */ 
+
+  #icon img{
+      width: 200px;
+      max-width: 300px;
+
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+    body {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg,   rgba(255,255,255,1) 30%, rgba(0,119,255,1) 50%);
+    }
+    
+    #min-temp {
+      margin-right: 2rem;
+    }
+    
+    .minmax {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+    font-size: 0.8rem;
+  }
+  
+  }
